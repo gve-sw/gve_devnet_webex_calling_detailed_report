@@ -1,0 +1,31 @@
+{% extends "/layouts/masterPage.html" %}
+{% block content %}
+<div style="max-width: 750px; margin: auto;">
+    <h1>Webex Calling Detailed Report App</h1>
+    <div style="background: #f5f5f5; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
+        <h2>Overview</h2>
+        <p>
+            This application automates the generation of detailed reports from Webex Calling. It provides an efficient solution for analyzing Call Detail Record (CDR) data, focusing on enhancing productivity and communication efficiency within organizations.
+        </p>
+        <h2>How it Works</h2>
+        <p>
+            1. Users authenticate with Webex Teams through a secure OAuth2 flow.
+        </p>
+        <p>
+            2. Upon authentication, the application fetches CDR data from Webex Calling.
+        </p>
+        <p>
+            3. The CDR data is processed and outputted into a .csv file.
+        </p>
+        <p>
+            4. Users can then use this .csv file for advanced analytics and visualization, such as with Microsoft Power BI.
+        </p>
+        <p>
+            This tool is designed to bridge the gap between data availability and actionable insights, aiding in data-driven decision-making.
+        </p>
+    </div>
+    <a href="/login" style="display: inline-block; margin-top: 20px;">
+        <button style="background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Login</button>
+    </a>
+</div>
+{% endblock %}
